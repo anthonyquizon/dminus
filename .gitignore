@@ -1,0 +1,12 @@
+
+trace.log
+trace.def
+\
+.tmp/
+a.out
+_*/
+.dmd/
+.rdmd
+*.o
+.dmd-out
+tmp/
