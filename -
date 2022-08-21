@@ -1,1 +1,16 @@
 #!/usr/bin/env bash
+
+libraries=""
+includes="-i=."
+flags="$includes $libraries -preview=shortenedMethods -g -od=.dmd -of=.dmd-out"
+lib_path=dminus
+
+watch() {
+    find $lib_path* -name '*.d' | entr -r $0 $@
+}
+
+tests() {
+	time dmd $flags -unittest -main -run $lib_path/$1.d
+}
+
+"$@"
