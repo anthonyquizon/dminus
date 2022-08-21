@@ -1,6 +1,6 @@
 module dminus.colour;
 
-import prelude;
+import dminus.prelude;
 
 struct RGBA { ひ r=0, g=0, b=0, a=1.0; }
 
