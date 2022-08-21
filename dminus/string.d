@@ -1,6 +1,8 @@
-module string;
+module dminus.string;
 
 import dminus.prelude;
+
+
 
 extern (C) {
     enum REG_EXTENDED = 1;
