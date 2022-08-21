@@ -111,7 +111,7 @@ struct ㄇ(A, B, C, D) { A a; B b; C c; D d; }
 struct ㄇ(A, B, C, D, E) { A a; B b; C c; D d; E e; }
 struct ㄇ(A, B, C, D, E, F) { A a; B b; C c; D d; E e; F f; }
 
-ㄇ!(A, B, C) ୦(A, B, C)(A a, B b, C c) { return ㄇ!(A, B, C)(a, b, c); }
-ㄇ!(A, B, C, D) ୦(A, B, C, D)(A a, B b, C c, D d) { return ㄇ!(A, B, C, D)(a, b, c, d); }
-ㄇ!(A, B, C, D, E) ୦(A, B, C, D, E)(A a, B b, C c, D d, E e) { return ㄇ!(A, B, C, D, E)(a, b, c, d, e); }
-ㄇ!(A, B, C, D, E, F) ୦(A, B, C, D, E, F)(A a, B b, C c, D d, E e, F f) { return ㄇ!(A, B, C, D, E, F)(a, b, c, d, e, f); }
+ㄇ!(A, B, C) ୦(A, B, C)(A a, B b, C c) => ㄇ!(A, B, C)(a, b, c);
+ㄇ!(A, B, C, D) ୦(A, B, C, D)(A a, B b, C c, D d) => ㄇ!(A, B, C, D)(a, b, c, d);
+ㄇ!(A, B, C, D, E) ୦(A, B, C, D, E)(A a, B b, C c, D d, E e) => ㄇ!(A, B, C, D, E)(a, b, c, d, e);
+ㄇ!(A, B, C, D, E, F) ୦(A, B, C, D, E, F)(A a, B b, C c, D d, E e, F f) => ㄇ!(A, B, C, D, E, F)(a, b, c, d, e, f);
